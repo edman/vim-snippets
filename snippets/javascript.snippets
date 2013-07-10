@@ -14,9 +14,9 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function (${1}) {
-		${3}
-	}${2:;}
+	function(${1}) {
+		${2:// body...}
+	}${3:;}
 # Immediate function
 snippet (f
 	(function (${1}) {
@@ -26,14 +26,14 @@ snippet (f
 snippet if
 	if (${1:true}) {
 		${2}
-	}
+	}${3}
 # if ... else
 snippet ife
 	if (${1:true}) {
 		${2}
 	} else {
 		${3}
-	}
+	} ${4}
 # tertiary conditional
 snippet ter
 	${1:/* condition */} ? ${2:a} : ${3:b}
